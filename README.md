@@ -11,7 +11,7 @@ The Forex API SDK is a Swift package designed to interact with the Forex Factory
 
 ## Requirements
 
-- iOS 13.0+ / macOS 10.15+
+- iOS 17.0+ / macOS 14+
 - Swift 5.5+
 - Xcode 12.0+
 
