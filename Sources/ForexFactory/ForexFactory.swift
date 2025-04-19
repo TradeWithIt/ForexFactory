@@ -15,7 +15,7 @@ public enum Impact: String, Codable {
 }
 
 public struct ForexEvent: Codable {
-    public let id: UUID = UUID()
+    public var id: UUID = UUID()
     public let title: String
     public let country: String
     public let date: Date
