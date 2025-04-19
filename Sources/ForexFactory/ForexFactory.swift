@@ -15,7 +15,7 @@ public enum Impact: String, Sendable, Codable {
 }
 
 public struct ForexEvent: Sendable, Codable {
-    public var id = UUID()
+    public let id = UUID()
     public let title: String
     public let country: String
     public let date: Date
@@ -23,6 +23,16 @@ public struct ForexEvent: Sendable, Codable {
     public let forecast: String?
     public let previous: String?
     public let actual: String?
+    
+    public enum CodingKeys: CodingKey {
+        case title
+        case country
+        case date
+        case impact
+        case forecast
+        case previous
+        case actual
+    }
 }
 
 public struct ForexCalendar: Decodable {
