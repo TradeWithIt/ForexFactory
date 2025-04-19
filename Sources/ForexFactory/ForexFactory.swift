@@ -1,6 +1,6 @@
 import Foundation
 
-public enum Impact: String, Codable {
+public enum Impact: String, Sendable, Codable {
     case high = "High"
     case medium = "Medium"
     case low = "Low"
@@ -14,8 +14,8 @@ public enum Impact: String, Codable {
     }
 }
 
-public struct ForexEvent: Codable {
-    public var id: UUID = UUID()
+public struct ForexEvent: Sendable, Codable {
+    public var id = UUID()
     public let title: String
     public let country: String
     public let date: Date
